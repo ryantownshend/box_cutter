@@ -1,0 +1,16 @@
+# Dirs
+.idea/
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.vscode/
+
+# Files
+.DS_Store
+.coverage
+*.xml
+.env
+
+

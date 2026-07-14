@@ -1,0 +1,26 @@
+[project]
+name = "box-cutter"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ryan",email = "citizen.townshend@gmail.com"}
+]
+readme = "README.md"
+
+packages = [
+    {include = "box_cutter"},
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pillow (>=12.3.0,<13.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^26.5.1"
+[tool.poetry.scripts]
+box-cutter = "box_cutter.box_cutter:main"
