@@ -24,10 +24,12 @@ def process_file(filename: Path, output_folder: Path, box: tuple[int]) -> None:
 @click.option(
     "--input",
     "input_path",
-    type=click.Path(path_type=Path, dir_okay=False, file_okay=True),
+    type=click.Path(path_type=Path),
 )
 @click.option(
-    "--output", "output_folder", type=click.Path(path_type=Path, dir_okay=True)
+    "--output",
+    "output_folder",
+    type=click.Path(path_type=Path, dir_okay=True),
 )
 @click.option("--box", type=int, nargs=4, help="left upper right lower")
 def main(input_path: Path, output_folder: Path, box: tuple[int]) -> None:
